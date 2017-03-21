@@ -1,6 +1,6 @@
 package com.example.controller;
 
-import com.example.util.DataPaiUtil;
+import com.example.util.DataAUtil;
 import com.example.util.DataBUtil;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,7 +13,7 @@ public class TesteController {
     
     @GetMapping("/testefilho")
     public String testeFilho() {
-        DataPaiUtil.imprimirData();
+        DataAUtil.imprimirData();
         DataBUtil.imprimirData();
 //        com.example.util.DataUtil.imprimirData();
         return "teste";
